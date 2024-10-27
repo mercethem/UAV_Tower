@@ -9,7 +9,7 @@ namespace Encryption
     // AesEncryption Sınıfı
     public class AesEncryption : BaseEncryption, IEncryption
     {
-        public override byte[] key { get; } // Implementation of key property // Anahtar property'sinin implementasyonu
+        public byte[] key { get; } // Implementation of key property // Anahtar property'sinin implementasyonu
         public byte[] iv { get; } // Property to store IV (Initialization Vector) // IV (Başlatma Vektörü) için property
 
         public AesEncryption(string keyInput, string ivInput)
