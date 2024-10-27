@@ -1,4 +1,4 @@
-
+//NuGet Package Manager ==> Portable.BouncyCastle!!!
 ﻿// Ana Program Sınıfı
 class TEST
 {
