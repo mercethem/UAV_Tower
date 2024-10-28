@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "i6xGQcDwzDE=",
+  "success": true,
+  "projectFilePath": "E:\\PROJECT\\UAV_TOWER\\UAV_TOWER.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\merce\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.21.0\\microsoft.visualstudio.azure.containers.tools.targets.1.21.0.nupkg.sha512",
+    "C:\\Users\\merce\\.nuget\\packages\\portable.bouncycastle\\1.9.0\\portable.bouncycastle.1.9.0.nupkg.sha512"
+  ],
+  "logs": []
+}

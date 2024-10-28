@@ -1,0 +1,7 @@
+220541022 - Ethem MERÇ (Scrum Master)   -> Architect - Backend - Embedded
+
+220541044 - Berkan BAĞIT                -> Architect - Backend - Embedded
+
+220541081 - Hivda KORKMAZ (A Şubesi)    -> Fullstack - Data Engineering
+
+220541052 - İslam ÇELEBİ                -> Fullstack - Data Engineering
