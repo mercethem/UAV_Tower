@@ -1,1 +1,0 @@
-Download before build : NuGet Package Manager ==> Portable.BouncyCastle 
