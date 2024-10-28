@@ -1,5 +1,5 @@
 # UAV_Tower
-Ethem MERÇ -> (Scrum Master) Architect. - Backend - Embedded
+Ethem MERÇ -> (Scrum Master) Architect. - Backend - Telecomunication
 
 Berkan BAĞIT -> Architect. - Backend - Embedded
 
