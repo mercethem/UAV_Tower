@@ -1,20 +1,19 @@
 namespace Aircraft;
- Hava Aracı Türleri
 
 class TEST
 {
     static void Main(string[] args)
     {
-         Hava araçlarını oluştur
-        var plane = new Plane(P1, Boeing 747, TypesOfAircraft.Civilian);  Creates a civilian plane  Sivil bir uçak oluşturur
-        var helicopter = new Helicopter(H1, Apache, TypesOfAircraft.Military);  Creates a military helicopter  Askeri bir helikopter oluşturur
-        var drone = new Drone(D1, DJI Mavic, TypesOfAircraft.Unknown);  Creates an unknown type drone  Bilinmeyen türde bir drone oluşturur
-        var uav = new UAV(U1, Predator, TypesOfAircraft.Military);  Creates a military UAV  Askeri bir İHA oluşturur
+        // Create aircraft // Hava araçlarını oluştur
+        var plane = new Aircraft.Plane("P1", "Boeing 747", Aircraft.TypesOfAircraft.Civilian); // Creates a civilian plane // Sivil bir uçak oluşturur
+        var helicopter = new Aircraft.Helicopter("H1", "Apache", Aircraft.TypesOfAircraft.Military); // Creates a military helicopter // Askeri bir helikopter oluşturur
+        var drone = new Aircraft.Drone("D1", "DJI Mavic", Aircraft.TypesOfAircraft.Unknown); // Creates an unknown type drone // Bilinmeyen türde bir drone oluşturur
+        var uav = new Aircraft.UAV("U1", "Predator", Aircraft.TypesOfAircraft.Military); // Creates a military UAV // Askeri bir İHA oluşturur
 
-         Özelliklerini yazdır
-        Console.WriteLine(plane.ToString());  Prints the string representation of the plane  Uçağın dize temsiline yazdırır
-        Console.WriteLine(helicopter.ToString());  Prints the string representation of the helicopter  Helikopterin dize temsiline yazdırır
-        Console.WriteLine(drone.ToString());  Prints the string representation of the drone  Drone'un dize temsiline yazdırır
-        Console.WriteLine(uav.ToString());  Prints the string representation of the UAV  İHA'nın dize temsiline yazdırır
+        // Print properties // Özelliklerini yazdır
+        Console.WriteLine(plane); // Prints the string representation of the plane // Uçağın dize temsiline yazdırır
+        Console.WriteLine(helicopter); // Prints the string representation of the helicopter // Helikopterin dize temsiline yazdırır
+        Console.WriteLine(drone); // Prints the string representation of the drone // Drone'un dize temsiline yazdırır
+        Console.WriteLine(uav); // Prints the string representation of the UAV // İHA'nın dize temsiline yazdırır
     }
 }

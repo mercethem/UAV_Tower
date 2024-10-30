@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\PROJECT\\UAV_TOWER\\UAV_TOWER.csproj": {}
+    "C:\\UAV_Tower\\UAV_TOWER.csproj": {}
   },
   "projects": {
-    "E:\\PROJECT\\UAV_TOWER\\UAV_TOWER.csproj": {
+    "C:\\UAV_Tower\\UAV_TOWER.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\PROJECT\\UAV_TOWER\\UAV_TOWER.csproj",
+        "projectUniqueName": "C:\\UAV_Tower\\UAV_TOWER.csproj",
         "projectName": "UAV_TOWER",
-        "projectPath": "E:\\PROJECT\\UAV_TOWER\\UAV_TOWER.csproj",
+        "projectPath": "C:\\UAV_Tower\\UAV_TOWER.csproj",
         "packagesPath": "C:\\Users\\merce\\.nuget\\packages\\",
-        "outputPath": "E:\\PROJECT\\UAV_TOWER\\obj\\",
+        "outputPath": "C:\\UAV_Tower\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
