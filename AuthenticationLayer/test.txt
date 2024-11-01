@@ -1,0 +1,35 @@
+using User.AuthenticationService;
+
+namespace User
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            IUserAuthenticationService authService = new UserAuthenticationService(); // Initialize the authentication service. // Kimlik doğrulama hizmetini başlat.
+
+            // Attempt to log in as an admin user
+            var admin = authService.Login("admin", "adminpass"); // Admin kullanıcı olarak giriş yapmayı dene.
+            if (admin != null) // Check if admin login was successful. // Yönetici girişi başarılıysa kontrol et.
+            {
+                Console.WriteLine("Admin User Info: " + admin.DisplayInfo()); // Output admin user information. // Yönetici kullanıcı bilgisini ekrana yazdır.
+                admin.LogOut(); // Sign out the admin user. // Yönetici kullanıcısını çıkış yaptır.
+            }
+
+            // Attempt to log in as a regular user
+            var regularUser = authService.Login("user", "userpass"); // Normal kullanıcı olarak giriş yapmayı dene.
+            if (regularUser != null) // Check if regular user login was successful. // Normal kullanıcı girişi başarılıysa kontrol et.
+            {
+                Console.WriteLine("Regular User Info: " + regularUser.DisplayInfo()); // Output regular user information. // Normal kullanıcı bilgisini ekrana yazdır.
+                regularUser.LogOut(); // Sign out the regular user. // Normal kullanıcısını çıkış yaptır.
+            }
+
+            // Attempt to log in with invalid credentials
+            var failedLogin = authService.Login("user", "wrongpassword"); // Geçersiz kimlik bilgileriyle giriş yapmayı dene.
+            if (failedLogin == null) // Check if login failed. // Girişin başarısız olup olmadığını kontrol et.
+            {
+                Console.WriteLine("Login attempt failed."); // Output login failure message. // Giriş denemesinin başarısız olduğunu ekrana yazdır.
+            }
+        }
+    }
+}
