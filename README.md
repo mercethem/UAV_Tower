@@ -1,7 +1,7 @@
 # UAV_Tower
-Ethem MERÇ -> (Scrum Master) Software Architect - Backend - Embedded Backend- Telecomunication - Data Security
+Ethem MERÇ -> (Scrum Master) Software Architect - Embedded/Software Backend - RF/Telecomunication - Data Security 
 
-Berkan BAĞIT -> Embedded Architect - Backend - Embedded - Embedded Backend
+Berkan BAĞIT -> Embedded Hard Architect - Backend - Embedded - Embedded Backend
 
 Hivda KORKMAZ -> Fullstack - Data Engineering
 
