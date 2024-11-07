@@ -1,0 +1,16 @@
+namespace Hash
+{
+    class Program
+    {
+        static void Main()
+        {
+            string input = "Hello canims";
+            string hash = Hash.GetSHA128Hash(input); // Get SHA-128 hash of the input string // Girdi dizisinin SHA-128 hash'ini al
+            string hash2 = Hash.GetSHA256Hash(input); // Get SHA-256 hash of the input string // Girdi dizisinin SHA-256 hash'ini al
+
+            Console.WriteLine("SHA-128 Hash: " + hash); // Print the SHA-128 hash to console // SHA-128 hash'ini ekrana yazdır
+            Console.WriteLine("SHA-256 Hash: " + hash2); // Print the SHA-256 hash to console // SHA-256 hash'ini ekrana yazdır
+        }
+    }
+
+}
