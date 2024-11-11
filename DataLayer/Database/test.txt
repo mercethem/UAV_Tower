@@ -1,1 +1,200 @@
+REDIS TEST 
+
+
+
+using System;
+using StackExchange.Redis;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+
+            
+        // Redis bağlantı dizesini burada belirtin (örneğin Docker için uygun bağlantı dizesi)
+        RedisDataBaseService redisService = new RedisDataBaseService(DataBaseConnectionStringsForLOGIN.connectionStringRedisDocker);
+
+        // Redis bağlantısını test et
+        if (redisService.ConnectionTest())
+        {
+            Console.WriteLine("Redis bağlantısı başarılı!");
+
+            // 1. Veriyi Ekle
+            Console.WriteLine("\nVeri Ekleme:");
+            string key = "user5";
+            string value = "password5";
+            redisService.SetValue(key, value);  // Redis'e veri ekliyoruz
+
+            // 2. Veriyi Oku (GetValue)
+            Console.WriteLine("\nVeriyi Okuma:");
+            string retrievedValue = redisService.GetValue(key);  // Redis'ten "user5" anahtarını alıyoruz
+            if (retrievedValue != null)
+            {
+                Console.WriteLine($"Veri bulundu: {retrievedValue}");
+            }
+            else
+            {
+                Console.WriteLine("No data found.");
+            }
+
+            // 3. Veriyi Güncelle (UpdateValue)
+            Console.WriteLine("\nVeriyi Güncelleme:");
+            string newPassword = "newpassword5";  // Güncellenmiş değer
+            redisService.UpdateValue(key, newPassword);  // Anahtarı güncelliyoruz
+
+            // Güncellenen veriyi tekrar oku
+            Console.WriteLine("\nGüncellenmiş Veriyi Okuma:");
+            string updatedValue = redisService.GetValue(key);
+            if (updatedValue != null)
+            {
+                Console.WriteLine($"Güncellenmiş veri: {updatedValue}");
+            }
+            else
+            {
+                Console.WriteLine("No data found.");
+            }
+
+            // 4. Veriyi Sil (DeleteValue)
+            Console.WriteLine("\nVeriyi Silme:");
+            redisService.DeleteValue(key);  // Anahtarı Redis'ten siler
+
+            // Silinen veriyi kontrol et
+            Console.WriteLine("\nSilinen Veriyi Kontrol Etme:");
+            string deletedValue = redisService.GetValue(key);
+            if (deletedValue == null)
+            {
+                Console.WriteLine("Data successfully deleted.");
+            }
+            else
+            {
+                Console.WriteLine("Failed to delete data.");
+            }
+        }
+        else
+        {
+            Console.WriteLine("Redis bağlantısı başarısız!");
+        }
+
+        Console.WriteLine("\nTestler tamamlandı.");
+    }
+}
+
+
+SQL TEST
+
+using Npgsql;
+using System;
+
+
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        // Bağlantı dizesini burada tanımlayın
+        string connectionString = DataBaseConnectionStringsForLOGIN.connectionStringPostgreDocker;
+
+        // PostgreSQLDatabaseService nesnesi oluşturuluyor
+        //PostgreSQLDatabaseService dbService = new PostgreSQLDatabaseService(connectionString);
+        LoginWithSQL loginWithSQL = new LoginWithSQL(connectionString);
+        // Bağlantı testi yapalım
+        if (loginWithSQL.ConnectionTest())
+        {
+            // Veritabanına bağlantıyı açalım
+            loginWithSQL.ConnectionDataBase();
+            string x = loginWithSQL.GetPasswordFromSQLDataBase("user2");
+            Console.WriteLine(x);
+        }
+        else
+        {
+            Console.WriteLine("Connection test failed.");
+        }
+    }
+}
+
+MONGO TEST
+
+using MongoDB.Driver;
+using MongoDB.Bson;
+using System;
+using System.Collections.Generic;
+
+public class User
+{
+    public ObjectId Id { get; set; } // MongoDB için benzersiz Id
+    public string UserId { get; set; }
+    public string Password { get; set; }
+}
+
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        // MongoDB bağlantı dizesi
+        string connectionString = DataBaseConnectionStringsForLOGIN.connectionStringMongoDocker; // Yerel MongoDB bağlantısı
+        string dbName = "UserDatabase"; // Kullanıcı veritabanı adı
+
+        // MongoDatabaseService sınıfı ile veritabanına bağlanma
+        var mongoService = new MongoDatabaseService(connectionString, dbName);
+
+        // Bağlantı testi
+        if (!mongoService.ConnectionTest())
+        {
+            Console.WriteLine("MongoDB bağlantısı sağlanamadı.");
+            return;
+        }
+
+        // 1. Yeni kullanıcı ekleme
+        var newUser = new User
+        {
+            UserId = "john_doe",
+            Password = "secure_password123"
+        };
+
+        mongoService.SetValue("users", newUser);
+
+        // 2. Kullanıcıları sorgulama (UserId = "john_doe" olanları)
+        var filter = Builders<User>.Filter.Eq(u => u.UserId, "john_doe");
+        var users = mongoService.GetValue<User>("users", filter);
+
+        Console.WriteLine("\nKullanıcılar:");
+        foreach (var user in users)
+        {
+            Console.WriteLine($"UserId: {user.UserId}, Password: {user.Password}");
+        }
+
+        // 3. Kullanıcı güncelleme (Password değiştirme)
+        var update = Builders<User>.Update.Set(u => u.Password, "new_secure_password456");
+        mongoService.UpdateValue("users", filter, update);
+
+        // 4. Güncellenmiş kullanıcıyı sorgulama
+        var updatedUsers = mongoService.GetValue<User>("users", filter);
+        Console.WriteLine("\nGüncellenmiş Kullanıcılar:");
+        foreach (var user in updatedUsers)
+        {
+            Console.WriteLine($"UserId: {user.UserId}, Password: {user.Password}");
+        }
+
+        // 5. Kullanıcıyı silme
+        mongoService.DeleteValue("users", filter);
+
+        // 6. Silinen kullanıcıyı sorgulama
+        var deletedUsers = mongoService.GetValue<User>("users", filter);
+        Console.WriteLine("\nSilinen Kullanıcılar:");
+        if (deletedUsers.Count == 0)
+        {
+            Console.WriteLine("Kullanıcı silindi.");
+        }
+        else
+        {
+            foreach (var user in deletedUsers)
+            {
+                Console.WriteLine($"UserId: {user.UserId}, Password: {user.Password}");
+            }
+        }
+    }
+}
+
+
+
+
 

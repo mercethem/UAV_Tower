@@ -1,0 +1,80 @@
+using MongoDB.Driver;
+using MongoDB.Bson;
+using System;
+using System.Collections.Generic;
+
+public class User
+{
+    public ObjectId Id { get; set; } // MongoDB için benzersiz Id
+    public string UserId { get; set; }
+    public string Password { get; set; }
+}
+
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        // MongoDB bağlantı dizesi
+        string connectionString = DataBaseConnectionStringsForLOGIN.connectionStringMongoDocker; // Yerel MongoDB bağlantısı
+        string dbName = "UserDatabase"; // Kullanıcı veritabanı adı
+
+        // MongoDatabaseService sınıfı ile veritabanına bağlanma
+        var mongoService = new MongoDatabaseService(connectionString, dbName);
+
+        // Bağlantı testi
+        if (!mongoService.ConnectionTest())
+        {
+            Console.WriteLine("MongoDB bağlantısı sağlanamadı.");
+            return;
+        }
+
+        // 1. Yeni kullanıcı ekleme
+        var newUser = new User
+        {
+            UserId = "john_doe",
+            Password = "secure_password123"
+        };
+
+        mongoService.SetValue("users", newUser);
+
+        // 2. Kullanıcıları sorgulama (UserId = "john_doe" olanları)
+        var filter = Builders<User>.Filter.Eq(u => u.UserId, "john_doe");
+        var users = mongoService.GetValue<User>("users", filter);
+
+        Console.WriteLine("\nKullanıcılar:");
+        foreach (var user in users)
+        {
+            Console.WriteLine($"UserId: {user.UserId}, Password: {user.Password}");
+        }
+
+        // 3. Kullanıcı güncelleme (Password değiştirme)
+        var update = Builders<User>.Update.Set(u => u.Password, "new_secure_password456");
+        mongoService.UpdateValue("users", filter, update);
+
+        // 4. Güncellenmiş kullanıcıyı sorgulama
+        var updatedUsers = mongoService.GetValue<User>("users", filter);
+        Console.WriteLine("\nGüncellenmiş Kullanıcılar:");
+        foreach (var user in updatedUsers)
+        {
+            Console.WriteLine($"UserId: {user.UserId}, Password: {user.Password}");
+        }
+
+        // 5. Kullanıcıyı silme
+        mongoService.DeleteValue("users", filter);
+
+        // 6. Silinen kullanıcıyı sorgulama
+        var deletedUsers = mongoService.GetValue<User>("users", filter);
+        Console.WriteLine("\nSilinen Kullanıcılar:");
+        if (deletedUsers.Count == 0)
+        {
+            Console.WriteLine("Kullanıcı silindi.");
+        }
+        else
+        {
+            foreach (var user in deletedUsers)
+            {
+                Console.WriteLine($"UserId: {user.UserId}, Password: {user.Password}");
+            }
+        }
+    }
+}
