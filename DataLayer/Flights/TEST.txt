@@ -1,0 +1,19 @@
+//redis, mongodb, postgresql nugets need
+namespace radarApi
+{
+    public class Program  // Programın ana sınıfı // Main class of the program
+    {
+        public static async Task Main(string[] args)
+        {
+            var runFlightDataProcessingAsync = new RunFlightDataProcessingAsync();  // Program sınıfından bir nesne oluştur // Creates an instance of the RunFlightDataProcessingAsync class
+
+            // MongoDB, PostgreSQL ve Redis işlemlerini paralel olarak başlat // Start MongoDB, PostgreSQL, and Redis operations concurrently
+            var mongoDbTask = runFlightDataProcessingAsync.RunFlightDataProcessingAsyncMongoDB();  // MongoDB için olan fonksiyon // MongoDB function
+            var postgreSqlTask = runFlightDataProcessingAsync.RunFlightDataProcessingAsyncPostgreSql();  // PostgreSQL için olan fonksiyon // PostgreSQL function
+            var redisTask = runFlightDataProcessingAsync.RunFlightDataProcessingAsyncRedis();  // Redis için olan fonksiyon // Redis function
+
+            // Tüm görevlerin tamamlanmasını bekle // Wait for all tasks to complete
+            await Task.WhenAll(mongoDbTask, postgreSqlTask, redisTask);  // Asenkron işlemlerin tamamlanmasını bekler // Waits for the asynchronous operations to complete
+        }
+    }
+}
