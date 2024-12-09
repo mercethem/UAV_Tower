@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "zMY28lczeaCfTPd0lq/mdElrF6gwSIrSOm59JuYGLHk=",
+  "Hash": "0JkPPLDJASl5aBxqBXQokY9yZ8pA/r06jc5MMlC1Vz8=",
   "Source": "UAV_TOWER",
   "BasePath": "_content/UAV_TOWER",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }
