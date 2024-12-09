@@ -1,1 +1,19 @@
+namespace DataBackup
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Creating an instance of the BackupProcessor class
+            BackupProcessor backupProcessor = new BackupProcessor();
 
+            // Calling the StartBackup method on the instance, passing the backup directory
+            string backupLocation = @"C:\Backup"; // You can change this as per your preference // Kullanıcıdan yedekleme dizini alıyoruz
+            backupProcessor.StartBackup(backupLocation); // Yedekleme işlemini başlatan fonksiyon, parametre olarak yedekleme dizinini alır
+
+            // Inform the user that the backup process is complete
+            Console.WriteLine("Backup completed."); // Yedekleme tamamlandı mesajı
+            Environment.Exit(0); // Automatically closes the application after completion
+        }
+    }
+}
