@@ -1,6 +1,6 @@
-﻿using User.User;
+﻿using AuthenticationServiceUser.User;
 
-namespace User.AuthenticationService
+namespace AuthenticationServiceUser.AuthenticationService
 {
     public abstract class BaseUserAuthenticationService : IUserAuthenticationService
     {

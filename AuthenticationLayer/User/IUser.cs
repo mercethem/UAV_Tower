@@ -1,6 +1,6 @@
-﻿using User.Person;
+﻿using AuthenticationServiceUser.Person;
 
-namespace User.User
+namespace AuthenticationServiceUser.User
 {
     public interface IUser : IPerson
     {

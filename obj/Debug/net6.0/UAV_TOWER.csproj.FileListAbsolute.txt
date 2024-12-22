@@ -1,0 +1,258 @@
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\bin\Debug\net6.0\appsettings.json
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\bin\Debug\net6.0\UAV_TOWER.staticwebassets.runtime.json
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\bin\Debug\net6.0\UAV_TOWER.staticwebassets.endpoints.json
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\bin\Debug\net6.0\UAV_TOWER.exe
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\bin\Debug\net6.0\UAV_TOWER.deps.json
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\bin\Debug\net6.0\UAV_TOWER.runtimeconfig.json
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\bin\Debug\net6.0\UAV_TOWER.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\bin\Debug\net6.0\UAV_TOWER.pdb
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\bin\Debug\net6.0\Accelergreat.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\bin\Debug\net6.0\Accelergreat.EntityFramework.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\bin\Debug\net6.0\Accelergreat.EntityFramework.PostgreSql.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\bin\Debug\net6.0\DnsClient.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\bin\Debug\net6.0\MongoDB.Bson.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\bin\Debug\net6.0\MongoDB.Driver.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\bin\Debug\net6.0\Namotion.Reflection.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\bin\Debug\net6.0\NJsonSchema.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\bin\Debug\net6.0\NJsonSchema.Annotations.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\bin\Debug\net6.0\Npgsql.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\bin\Debug\net6.0\Pipelines.Sockets.Unofficial.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\bin\Debug\net6.0\BouncyCastle.Crypto.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\bin\Debug\net6.0\SharpCompress.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\bin\Debug\net6.0\Snappier.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\bin\Debug\net6.0\StackExchange.Redis.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\bin\Debug\net6.0\ZstdSharp.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\obj\Debug\net6.0\UAV_TOWER.csproj.AssemblyReference.cache
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\obj\Debug\net6.0\UAV_TOWER.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\obj\Debug\net6.0\UAV_TOWER.AssemblyInfoInputs.cache
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\obj\Debug\net6.0\UAV_TOWER.AssemblyInfo.cs
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\obj\Debug\net6.0\UAV_TOWER.csproj.CoreCompileInputs.cache
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\obj\Debug\net6.0\UAV_TOWER.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\obj\Debug\net6.0\UAV_TOWER.RazorAssemblyInfo.cache
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\obj\Debug\net6.0\UAV_TOWER.RazorAssemblyInfo.cs
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\obj\Debug\net6.0\UAV_TOWER.sourcelink.json
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\obj\Debug\net6.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\obj\Debug\net6.0\scopedcss\bundle\UAV_TOWER.styles.css
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\obj\Debug\net6.0\scopedcss\projectbundle\UAV_TOWER.bundle.scp.css
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\obj\Debug\net6.0\staticwebassets.build.endpoints.json
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\obj\Debug\net6.0\staticwebassets\msbuild.UAV_TOWER.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\obj\Debug\net6.0\staticwebassets\msbuild.UAV_TOWER.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\obj\Debug\net6.0\staticwebassets\msbuild.build.UAV_TOWER.props
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.UAV_TOWER.props
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.UAV_TOWER.props
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\obj\Debug\net6.0\staticwebassets.upToDateCheck.txt
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\obj\Debug\net6.0\UAV_TOWER.csproj.Up2Date
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\obj\Debug\net6.0\UAV_TOWER.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\obj\Debug\net6.0\refint\UAV_TOWER.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\obj\Debug\net6.0\UAV_TOWER.pdb
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\obj\Debug\net6.0\UAV_TOWER.genruntimeconfig.cache
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.01\obj\Debug\net6.0\ref\UAV_TOWER.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\bin\Debug\net6.0\appsettings.json
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\bin\Debug\net6.0\UAV_Tower.staticwebassets.runtime.json
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\bin\Debug\net6.0\UAV_Tower.staticwebassets.endpoints.json
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\bin\Debug\net6.0\UAV_Tower.exe
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\bin\Debug\net6.0\UAV_Tower.deps.json
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\bin\Debug\net6.0\UAV_Tower.runtimeconfig.json
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\bin\Debug\net6.0\UAV_Tower.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\bin\Debug\net6.0\UAV_Tower.pdb
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\bin\Debug\net6.0\Accelergreat.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\bin\Debug\net6.0\Accelergreat.EntityFramework.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\bin\Debug\net6.0\Accelergreat.EntityFramework.PostgreSql.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\bin\Debug\net6.0\DnsClient.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\bin\Debug\net6.0\MongoDB.Bson.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\bin\Debug\net6.0\MongoDB.Driver.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\bin\Debug\net6.0\Namotion.Reflection.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\bin\Debug\net6.0\NJsonSchema.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\bin\Debug\net6.0\NJsonSchema.Annotations.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\bin\Debug\net6.0\Npgsql.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\bin\Debug\net6.0\Pipelines.Sockets.Unofficial.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\bin\Debug\net6.0\BouncyCastle.Crypto.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\bin\Debug\net6.0\SharpCompress.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\bin\Debug\net6.0\Snappier.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\bin\Debug\net6.0\StackExchange.Redis.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\bin\Debug\net6.0\ZstdSharp.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\obj\Debug\net6.0\UAV_Tower.csproj.AssemblyReference.cache
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\obj\Debug\net6.0\UAV_Tower.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\obj\Debug\net6.0\UAV_Tower.AssemblyInfoInputs.cache
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\obj\Debug\net6.0\UAV_Tower.AssemblyInfo.cs
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\obj\Debug\net6.0\UAV_Tower.csproj.CoreCompileInputs.cache
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\obj\Debug\net6.0\UAV_Tower.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\obj\Debug\net6.0\UAV_Tower.RazorAssemblyInfo.cache
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\obj\Debug\net6.0\UAV_Tower.RazorAssemblyInfo.cs
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\obj\Debug\net6.0\UAV_Tower.sourcelink.json
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\obj\Debug\net6.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\obj\Debug\net6.0\scopedcss\bundle\UAV_Tower.styles.css
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\obj\Debug\net6.0\scopedcss\projectbundle\UAV_Tower.bundle.scp.css
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\obj\Debug\net6.0\staticwebassets.build.endpoints.json
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\obj\Debug\net6.0\staticwebassets\msbuild.UAV_Tower.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\obj\Debug\net6.0\staticwebassets\msbuild.UAV_Tower.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\obj\Debug\net6.0\staticwebassets\msbuild.build.UAV_Tower.props
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.UAV_Tower.props
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.UAV_Tower.props
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\obj\Debug\net6.0\staticwebassets.upToDateCheck.txt
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\obj\Debug\net6.0\UAV_Tower.csproj.Up2Date
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\obj\Debug\net6.0\UAV_Tower.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\obj\Debug\net6.0\refint\UAV_Tower.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\obj\Debug\net6.0\UAV_Tower.pdb
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\obj\Debug\net6.0\UAV_Tower.genruntimeconfig.cache
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04 - Copy - Copy\obj\Debug\net6.0\ref\UAV_Tower.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\bin\Debug\net6.0\appsettings.json
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\bin\Debug\net6.0\UAV_Tower.staticwebassets.endpoints.json
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\bin\Debug\net6.0\UAV_Tower.staticwebassets.runtime.json
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\bin\Debug\net6.0\UAV_Tower.exe
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\bin\Debug\net6.0\UAV_Tower.deps.json
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\bin\Debug\net6.0\UAV_Tower.runtimeconfig.json
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\bin\Debug\net6.0\UAV_Tower.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\bin\Debug\net6.0\UAV_Tower.pdb
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\bin\Debug\net6.0\Accelergreat.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\bin\Debug\net6.0\Accelergreat.EntityFramework.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\bin\Debug\net6.0\Accelergreat.EntityFramework.PostgreSql.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\bin\Debug\net6.0\DnsClient.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\bin\Debug\net6.0\MongoDB.Bson.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\bin\Debug\net6.0\MongoDB.Driver.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\bin\Debug\net6.0\Namotion.Reflection.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\bin\Debug\net6.0\NJsonSchema.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\bin\Debug\net6.0\NJsonSchema.Annotations.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\bin\Debug\net6.0\Npgsql.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\bin\Debug\net6.0\Pipelines.Sockets.Unofficial.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\bin\Debug\net6.0\BouncyCastle.Crypto.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\bin\Debug\net6.0\SharpCompress.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\bin\Debug\net6.0\Snappier.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\bin\Debug\net6.0\StackExchange.Redis.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\bin\Debug\net6.0\ZstdSharp.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\obj\Debug\net6.0\UAV_Tower.csproj.AssemblyReference.cache
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\obj\Debug\net6.0\UAV_Tower.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\obj\Debug\net6.0\UAV_Tower.AssemblyInfoInputs.cache
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\obj\Debug\net6.0\UAV_Tower.AssemblyInfo.cs
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\obj\Debug\net6.0\UAV_Tower.csproj.CoreCompileInputs.cache
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\obj\Debug\net6.0\UAV_Tower.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\obj\Debug\net6.0\UAV_Tower.RazorAssemblyInfo.cache
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\obj\Debug\net6.0\UAV_Tower.RazorAssemblyInfo.cs
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\obj\Debug\net6.0\UAV_Tower.sourcelink.json
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\obj\Debug\net6.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\obj\Debug\net6.0\scopedcss\bundle\UAV_Tower.styles.css
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\obj\Debug\net6.0\scopedcss\projectbundle\UAV_Tower.bundle.scp.css
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\obj\Debug\net6.0\staticwebassets.build.endpoints.json
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\obj\Debug\net6.0\staticwebassets\msbuild.UAV_Tower.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\obj\Debug\net6.0\staticwebassets\msbuild.UAV_Tower.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\obj\Debug\net6.0\staticwebassets\msbuild.build.UAV_Tower.props
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.UAV_Tower.props
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.UAV_Tower.props
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\obj\Debug\net6.0\staticwebassets.upToDateCheck.txt
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\obj\Debug\net6.0\UAV_Tower.csproj.Up2Date
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\obj\Debug\net6.0\UAV_Tower.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\obj\Debug\net6.0\refint\UAV_Tower.dll
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\obj\Debug\net6.0\UAV_Tower.pdb
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\obj\Debug\net6.0\UAV_Tower.genruntimeconfig.cache
+C:\Users\merce\OneDrive\Masaüstü\UAV_Tower V1.04\obj\Debug\net6.0\ref\UAV_Tower.dll
+C:\UAV_Tower\bin\Debug\net6.0\appsettings.Development.json
+C:\UAV_Tower\bin\Debug\net6.0\appsettings.json
+C:\UAV_Tower\bin\Debug\net6.0\UAV_Tower.staticwebassets.endpoints.json
+C:\UAV_Tower\bin\Debug\net6.0\UAV_Tower.staticwebassets.runtime.json
+C:\UAV_Tower\bin\Debug\net6.0\UAV_Tower.exe
+C:\UAV_Tower\bin\Debug\net6.0\UAV_Tower.deps.json
+C:\UAV_Tower\bin\Debug\net6.0\UAV_Tower.runtimeconfig.json
+C:\UAV_Tower\bin\Debug\net6.0\UAV_Tower.dll
+C:\UAV_Tower\bin\Debug\net6.0\UAV_Tower.pdb
+C:\UAV_Tower\bin\Debug\net6.0\Accelergreat.dll
+C:\UAV_Tower\bin\Debug\net6.0\Accelergreat.EntityFramework.dll
+C:\UAV_Tower\bin\Debug\net6.0\Accelergreat.EntityFramework.PostgreSql.dll
+C:\UAV_Tower\bin\Debug\net6.0\DnsClient.dll
+C:\UAV_Tower\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\UAV_Tower\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\UAV_Tower\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\UAV_Tower\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\UAV_Tower\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\UAV_Tower\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\UAV_Tower\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\UAV_Tower\bin\Debug\net6.0\MongoDB.Bson.dll
+C:\UAV_Tower\bin\Debug\net6.0\MongoDB.Driver.dll
+C:\UAV_Tower\bin\Debug\net6.0\Namotion.Reflection.dll
+C:\UAV_Tower\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\UAV_Tower\bin\Debug\net6.0\NJsonSchema.dll
+C:\UAV_Tower\bin\Debug\net6.0\NJsonSchema.Annotations.dll
+C:\UAV_Tower\bin\Debug\net6.0\Npgsql.dll
+C:\UAV_Tower\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\UAV_Tower\bin\Debug\net6.0\Pipelines.Sockets.Unofficial.dll
+C:\UAV_Tower\bin\Debug\net6.0\BouncyCastle.Crypto.dll
+C:\UAV_Tower\bin\Debug\net6.0\SharpCompress.dll
+C:\UAV_Tower\bin\Debug\net6.0\Snappier.dll
+C:\UAV_Tower\bin\Debug\net6.0\StackExchange.Redis.dll
+C:\UAV_Tower\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\UAV_Tower\bin\Debug\net6.0\ZstdSharp.dll
+C:\UAV_Tower\obj\Debug\net6.0\UAV_Tower.csproj.AssemblyReference.cache
+C:\UAV_Tower\obj\Debug\net6.0\UAV_Tower.GeneratedMSBuildEditorConfig.editorconfig
+C:\UAV_Tower\obj\Debug\net6.0\UAV_Tower.AssemblyInfoInputs.cache
+C:\UAV_Tower\obj\Debug\net6.0\UAV_Tower.AssemblyInfo.cs
+C:\UAV_Tower\obj\Debug\net6.0\UAV_Tower.csproj.CoreCompileInputs.cache
+C:\UAV_Tower\obj\Debug\net6.0\UAV_Tower.MvcApplicationPartsAssemblyInfo.cache
+C:\UAV_Tower\obj\Debug\net6.0\UAV_Tower.RazorAssemblyInfo.cache
+C:\UAV_Tower\obj\Debug\net6.0\UAV_Tower.RazorAssemblyInfo.cs
+C:\UAV_Tower\obj\Debug\net6.0\UAV_Tower.sourcelink.json
+C:\UAV_Tower\obj\Debug\net6.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\UAV_Tower\obj\Debug\net6.0\scopedcss\bundle\UAV_Tower.styles.css
+C:\UAV_Tower\obj\Debug\net6.0\scopedcss\projectbundle\UAV_Tower.bundle.scp.css
+C:\UAV_Tower\obj\Debug\net6.0\staticwebassets.build.json
+C:\UAV_Tower\obj\Debug\net6.0\staticwebassets.development.json
+C:\UAV_Tower\obj\Debug\net6.0\staticwebassets.build.endpoints.json
+C:\UAV_Tower\obj\Debug\net6.0\staticwebassets\msbuild.UAV_Tower.Microsoft.AspNetCore.StaticWebAssets.props
+C:\UAV_Tower\obj\Debug\net6.0\staticwebassets\msbuild.UAV_Tower.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\UAV_Tower\obj\Debug\net6.0\staticwebassets\msbuild.build.UAV_Tower.props
+C:\UAV_Tower\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.UAV_Tower.props
+C:\UAV_Tower\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.UAV_Tower.props
+C:\UAV_Tower\obj\Debug\net6.0\staticwebassets.pack.json
+C:\UAV_Tower\obj\Debug\net6.0\staticwebassets.upToDateCheck.txt
+C:\UAV_Tower\obj\Debug\net6.0\UAV_Tower.csproj.Up2Date
+C:\UAV_Tower\obj\Debug\net6.0\UAV_Tower.dll
+C:\UAV_Tower\obj\Debug\net6.0\refint\UAV_Tower.dll
+C:\UAV_Tower\obj\Debug\net6.0\UAV_Tower.pdb
+C:\UAV_Tower\obj\Debug\net6.0\UAV_Tower.genruntimeconfig.cache
+C:\UAV_Tower\obj\Debug\net6.0\ref\UAV_Tower.dll

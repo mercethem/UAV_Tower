@@ -1,0 +1,58 @@
+﻿@page
+@model UAV_Tower.Pages.Account.LoginModel
+@{
+    ViewData["Title"] = "UAV_Tower";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/site.css">
+</head>
+<body>
+    <div class="login">
+        <h2>UAV Tower</h2>
+
+        <!-- Hata mesajı -->
+        @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+        {
+            <div class="alert">
+                @Model.ErrorMessage
+            </div>
+        }
+
+        <!-- Login Formu -->
+        <form method="post">
+            <div class="form-group">
+                <label for="username">
+                    <i class="fas fa-user-alt"></i> Username
+                </label>
+                <input type="text" id="username" name="Username" class="input-field" required>
+            </div>
+            <div class="form-group">
+                <label for="password">
+                    <i class="fas fa-lock"></i> Password
+                </label>
+                <input type="password" id="password" name="Password" class="input-field" required>
+            </div>
+            <button type="submit" class="button2">
+                Login
+            </button>
+        </form>
+    </div>
+
+    <!-- Yükleme Animasyonu -->
+    <div id="loading-spinner" style="display: none;">
+        <div class="spinner">
+            <div class="spinner1"></div>
+        </div>
+    </div>
+
+    <!-- JavaScript dosyasını dahil et -->
+    <script src="~/js/site.js"></script>
+</body>
+</html>

@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.11.35327.3
+VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UAV_TOWER", "UAV_TOWER.csproj", "{B9E72F4D-9DEF-4646-82A8-CD982FE6749F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UAV_Tower", "UAV_Tower.csproj", "{5856B9FD-E9C5-4E0A-83ED-1B90EBA6BA44}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B9E72F4D-9DEF-4646-82A8-CD982FE6749F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B9E72F4D-9DEF-4646-82A8-CD982FE6749F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B9E72F4D-9DEF-4646-82A8-CD982FE6749F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B9E72F4D-9DEF-4646-82A8-CD982FE6749F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5856B9FD-E9C5-4E0A-83ED-1B90EBA6BA44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5856B9FD-E9C5-4E0A-83ED-1B90EBA6BA44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5856B9FD-E9C5-4E0A-83ED-1B90EBA6BA44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5856B9FD-E9C5-4E0A-83ED-1B90EBA6BA44}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {3AB14FB7-9356-47A5-AB6B-0EC0B56375E4}
+		SolutionGuid = {08F9EFCC-77E0-4910-AD6B-5CB8B2C98E73}
 	EndGlobalSection
 EndGlobal

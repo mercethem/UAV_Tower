@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\UAV_Tower\\UAV_TOWER.csproj": {}
+    "C:\\UAV_Tower\\UAV_Tower.csproj": {}
   },
   "projects": {
-    "C:\\UAV_Tower\\UAV_TOWER.csproj": {
+    "C:\\UAV_Tower\\UAV_Tower.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\UAV_Tower\\UAV_TOWER.csproj",
-        "projectName": "UAV_TOWER",
-        "projectPath": "C:\\UAV_Tower\\UAV_TOWER.csproj",
+        "projectUniqueName": "C:\\UAV_Tower\\UAV_Tower.csproj",
+        "projectName": "UAV_Tower",
+        "projectPath": "C:\\UAV_Tower\\UAV_Tower.csproj",
         "packagesPath": "C:\\Users\\merce\\.nuget\\packages\\",
         "outputPath": "C:\\UAV_Tower\\obj\\",
         "projectStyle": "PackageReference",
@@ -22,15 +22,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -47,20 +47,20 @@
         "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
-            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+            "Accelergreat.EntityFramework.PostgreSql": {
               "target": "Package",
-              "version": "[1.21.0, )"
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
             },
             "MongoDB.Driver": {
               "target": "Package",
               "version": "[3.1.0, )"
-            },
-            "Npgsql": {
-              "target": "Package",
-              "version": "[9.0.2, )"
             },
             "Portable.BouncyCastle": {
               "target": "Package",
@@ -68,7 +68,7 @@
             },
             "StackExchange.Redis": {
               "target": "Package",
-              "version": "[2.8.22, )"
+              "version": "[2.8.24, )"
             }
           },
           "imports": [
@@ -82,6 +82,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -90,7 +108,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,4 +1,4 @@
-﻿namespace User.User
+﻿namespace AuthenticationServiceUser.User
 {
     public class AdminUser : BaseUser
     {

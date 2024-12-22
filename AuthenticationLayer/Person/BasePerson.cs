@@ -1,4 +1,4 @@
-﻿namespace User.Person
+﻿namespace AuthenticationServiceUser.Person
 {
     public abstract class BasePerson : IPerson
     {

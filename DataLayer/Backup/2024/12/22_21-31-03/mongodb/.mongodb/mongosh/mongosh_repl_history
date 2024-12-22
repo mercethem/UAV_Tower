@@ -1,0 +1,14 @@
+db.users.find()
+show collections
+use UserDatabase
+show dbs
+cls
+clear
+db.users.find()
+show collections
+db.users.find()
+show collections
+use users
+show collections
+use UserDatabase
+show dbs

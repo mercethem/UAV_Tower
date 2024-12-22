@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\UAV_Tower.props" />
+</Project>
