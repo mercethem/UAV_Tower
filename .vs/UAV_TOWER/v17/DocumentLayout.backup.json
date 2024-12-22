@@ -30,9 +30,9 @@
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\UAV_Tower\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
-              "ToolTip": "C:\\UAV_Tower\\Properties\\launchSettings.json*",
-              "RelativeToolTip": "Properties\\launchSettings.json*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABFAAAAAAAAAA==",
+              "ToolTip": "C:\\UAV_Tower\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-12-22T15:00:03.233Z",
               "IsPinned": true,
@@ -56,8 +56,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAHQAAAAAAAAAAAAvwIEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T18:26:04.896Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-22T18:26:04.896Z"
             },
             {
               "$type": "Document",
@@ -69,8 +68,7 @@
               "RelativeToolTip": "Pages\\Home\\Index.cshtml",
               "ViewState": "AgIAAA4AAAAAAAAAAAAswCIAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-22T15:53:13.828Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-22T15:53:13.828Z"
             }
           ]
         }
