@@ -47,6 +47,7 @@ namespace radarApi
             var flightDataFetcher = new FlightDataFetcher(flightDataService);  // Uçuş verilerini çekmek için fetcher'ı başlatır // Initializes the flight data fetcher
             var flightDataHandler = new FlightDataHandler();  // Uçuş verilerini işlemek için handler'ı başlatır // Initializes the flight data handler
             var flightDataUpdater = new FlightDataUpdater();  // Uçuş verilerini güncellemek için updater'ı başlatır // Initializes the flight data updater
+            //var flightDataSaver = new FlightDataSaver.FlightDataSaverPostgreSql("Host=localhost;Port=5432;Username=postgres;Database=postgres");  // PostgreSQL veritabanına kaydetme sınıfını başlatır // Initializes the PostgreSQL saver
             var flightDataSaver = new FlightDataSaver.FlightDataSaverPostgreSql("Host=127.0.0.1;Port=5432;Username=postgres;Database=postgres");  // PostgreSQL veritabanına kaydetme sınıfını başlatır // Initializes the PostgreSQL saver
 
             var lastMessageCounts = new ConcurrentDictionary<string, (int Count, DateTime LastUpdated)>();  // Mesaj sayıları ve son güncellenme zamanı için dictionary // A dictionary for message counts and last update time

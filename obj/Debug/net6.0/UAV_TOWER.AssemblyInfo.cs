@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UAV_Tower")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d6df606bc9f84ebb530d2937c1a47c824cfdcb53")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+731e2e1551de8c16253f77190bf2dbe0888eeb94")]
 [assembly: System.Reflection.AssemblyProductAttribute("UAV_Tower")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UAV_Tower")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

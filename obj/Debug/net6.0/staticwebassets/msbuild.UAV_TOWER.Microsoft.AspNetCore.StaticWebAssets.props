@@ -66,8 +66,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>00br4jwr3o</Fingerprint>
-      <Integrity>cOCp7QTAXSZo2ExXB+HyzCqPYkIkcPj+RuFrMWsqgYs=</Integrity>
+      <Fingerprint>l9tv97ynne</Fingerprint>
+      <Integrity>6areLoWFbKY39ttyebi8584n9c/u1sx8MoWsl3xQi5c=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\RadarSat.gif'))</OriginalItemSpec>
@@ -84,8 +84,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>d7lpxrxq2t</Fingerprint>
-      <Integrity>ZyvXjWIwrnfTABPDZb8NE6umOGi4y0KZBXxeMr9k4rA=</Integrity>
+      <Fingerprint>voi9fgpela</Fingerprint>
+      <Integrity>IXrhVoW0VC/4FFL33IDQ70I+MWL0UQrROGKOREd6nGo=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\Termal.gif'))</OriginalItemSpec>

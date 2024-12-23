@@ -5,8 +5,7 @@ using radarApi;
 using DataBackup;
 using System.Diagnostics;
 using System.Threading.Tasks;
-
-
+using Microsoft.Extensions.Hosting; // BÜYÜK HARF: IHostApplicationLifetime için gerekli namespace
 
 // CHECH RunFlightDataProcessingAsync
 
@@ -87,6 +86,15 @@ Console.WriteLine("Backup completed."); // Yedekleme tamamlandı mesajı
 
 
 
+
+
+
+
+
+
+
+
+
 // Asenkron görevlerinizi başlatmadan önce uygulamayı başlatın
 var builder = WebApplication.CreateBuilder(args);
 
@@ -103,23 +111,20 @@ builder.Services.AddRazorPages();
 
 var app = builder.Build();
 
-// Asenkron görevleri başlat
-Task.Run(() => StartLongRunningTasks());
+// BÜYÜK HARF: IHostApplicationLifetime hizmetini alıyoruz
+var lifetime = app.Services.GetRequiredService<IHostApplicationLifetime>();
 
-// Uygulamanın temel HTTP güvenliğini ve yönlendirme işlemlerini yapılandırın
-if (app.Environment.IsDevelopment())
-{
-    app.UseDeveloperExceptionPage();
-}
-else
-{
-    app.UseExceptionHandler("/Home/Error");
-    app.UseHsts();
-}
+// **Asenkron görevlerin başlatılması** - app.Run() çağrılmadan önce başlatıyoruz.
+var runFlightDataProcessingAsync = new RunFlightDataProcessingAsync();
+var mongoDbTask = runFlightDataProcessingAsync.RunFlightDataProcessingAsyncMongoDB();
+var postgreSqlTask = runFlightDataProcessingAsync.RunFlightDataProcessingAsyncPostgreSql();
+var redisTask = runFlightDataProcessingAsync.RunFlightDataProcessingAsyncRedis();
+
+// BÜYÜK HARF: Uygulama kapanmadan önce çalışacak fonksiyonu kaydediyoruz
+lifetime.ApplicationStopping.Register(() => OnApplicationStopping());
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
 app.UseRouting();
 
 // Giriş ekranı ve Razor Pages yapılandırmaları
@@ -129,17 +134,26 @@ app.MapRazorPages();
 // Uygulamanın ana işleyişini başlat
 app.Run();
 
-// Uzun süren veya sonsuz döngüde çalışan fonksiyonları burada başlatabilirsiniz
-async Task StartLongRunningTasks()
+await Task.WhenAll(mongoDbTask, postgreSqlTask, redisTask);  // Bu görevlerin tamamlanmasını bekleriz
+
+// BÜYÜK HARF: Uygulama kapanmadan önce yapılacak işlemleri tanımladık
+void OnApplicationStopping()
 {
-    // CHECK RunFlightDataProcessingAsync
-    var runFlightDataProcessingAsync = new RunFlightDataProcessingAsync();  // Program sınıfından bir nesne oluştur // Creates an instance of the RunFlightDataProcessingAsync class
+    // BÜYÜK HARF: Kapanmadan önce çalışacak işlemleri burada başlatıyoruz
+    Console.WriteLine("Uygulama kapanmadan önce çalıştırılıyor...");
 
-    // MongoDB, PostgreSQL ve Redis işlemlerini paralel olarak başlat
-    var mongoDbTask = runFlightDataProcessingAsync.RunFlightDataProcessingAsyncMongoDB();  // MongoDB için olan fonksiyon // MongoDB function
-    var postgreSqlTask = runFlightDataProcessingAsync.RunFlightDataProcessingAsyncPostgreSql();  // PostgreSQL için olan fonksiyon // PostgreSQL function
-    var redisTask = runFlightDataProcessingAsync.RunFlightDataProcessingAsyncRedis();  // Redis için olan fonksiyon // Redis function
+    // BÜYÜK HARF: Bu metod, görevlerinizi başlatmak için çağrılıyor
+    Task.Run(async () => await RunTasksBeforeShutdown());
+}
 
-    // Tüm görevlerin tamamlanmasını bekle
-    await Task.WhenAll(mongoDbTask, postgreSqlTask, redisTask);  // Asenkron işlemlerin tamamlanmasını bekler // Waits for the asynchronous operations to complete
+async Task RunTasksBeforeShutdown()
+{
+    controlDump1090 = controlDump1090 + ".exe";
+    controlWeatherAnalysis = controlWeatherAnalysis + ".exe";
+    controlSatellite = controlSatellite + ".exe";
+    Process.GetProcessesByName(controlDump1090).ToList().ForEach(p => p.Kill());
+    Process.GetProcessesByName(controlWeatherAnalysis).ToList().ForEach(p => p.Kill());
+    Process.GetProcessesByName(controlSatellite).ToList().ForEach(p => p.Kill());
+    // BÜYÜK HARF: Asenkron görevlerin tamamlanmasını bekliyoruz
+    await Task.WhenAll(mongoDbTask, postgreSqlTask, redisTask); // Uygulama kapanmadan önce tüm görevler tamamlanacak
 }
