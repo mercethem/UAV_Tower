@@ -37,13 +37,13 @@ namespace DataBackup
             };
 
             Process process = Process.Start(pro);
-            process.WaitForExit(); // Waiting for the command to complete // Komutun tamamlanmasını bekliyoruz
+            process.WaitForExit(); // Waiting for the command to complete
         }
 
         private bool IsContainerRunning(string containerName)
         {
             var result = RunCommandAndGetOutput("docker", $"ps -q -f name={containerName}");
-            return !string.IsNullOrEmpty(result); // Checking if the container is running // Konteynerin çalışıp çalışmadığını kontrol ediyoruz
+            return !string.IsNullOrEmpty(result); // Checking if the container is running 
         }
 
         private string RunCommandAndGetOutput(string command, string arguments)

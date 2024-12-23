@@ -132,15 +132,15 @@ button {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
     overflow-y: auto;
-    display: flex; /*SONRADAN*/
-    justify-content: center; /*SONRADAN*/
-    align-items: center; /*SONRADAN*/
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
 }
 
     .custom-modal img {
-        max-width: 100%; /* GIF'in genişliğini çerçevenin genişliğine göre ayarlar */ /*SONRADAN*/
-        max-height: 100%; /* GIF'in yüksekliğini çerçevenin yüksekliğine göre ayarlar */ /*SONRADAN*/
-        object-fit: contain; /* GIF'in oranlarını koruyarak sığdırılması */ /*cover*/ /*SONRADAN*/
+        max-width: 100%; 
+        max-height: 100%; 
+        object-fit: contain; 
     }
 
 /* New Hour Date Card Style */
@@ -148,7 +148,7 @@ button {
     position: absolute;
     top: 20px;
     left: 20px;
-    background: linear-gradient(45deg, GREY, BLACK); /* Gradient background */
+    background: linear-gradient(45deg, GREY, BLACK);
     padding: 15px;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);

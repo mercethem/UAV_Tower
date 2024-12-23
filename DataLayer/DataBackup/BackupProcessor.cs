@@ -9,10 +9,9 @@
             if (string.IsNullOrEmpty(backupLocation))
             {
                 backupLocation = @"C:\Backup";
-                Console.WriteLine($"Using the default backup directory: {backupLocation}"); // Varsayılan yedekleme dizini kullanılıyor
+                Console.WriteLine($"Using the default backup directory: {backupLocation}");
             }
 
-            // Passing the backup location to the BackupManager class
             BackupManager.BackupLocation = backupLocation;
 
             // Starting backup services
@@ -22,7 +21,7 @@
 
             // Starting the backup manager with the services
             var backupServices = new IBackupService[] { redisBackup, mongoBackup, postgresqlBackup };
-            var backupManager = new BackupManager(backupServices); // Tüm servislerle yedekleme başlatılıyor
+            var backupManager = new BackupManager(backupServices);
             backupManager.Start();
         }
     }

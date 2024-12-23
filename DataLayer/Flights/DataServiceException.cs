@@ -1,7 +1,7 @@
-﻿namespace radarApi // Namespace tanımlaması // Defines the namespace for the project
+﻿namespace radarApi
 {
-    public class DataServiceException : Exception  // Veri servisi hata sınıfı // Data service exception class
+    public class DataServiceException : Exception // Data service exception class
     {
-        public DataServiceException(string message) : base(message) { }  // Hata mesajını alıp Exception'a ileten constructor // Constructor that takes the error message and passes it to the base Exception class
+        public DataServiceException(string message) : base(message) { }  // Constructor that takes the error message and passes it to the base Exception class
     }
 }

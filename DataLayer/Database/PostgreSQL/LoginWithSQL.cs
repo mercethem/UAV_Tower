@@ -9,7 +9,7 @@ class LoginWithSQL : PostgreSQLDatabaseService
 
     public string GetPasswordFromSQLDataBase(string userId)
     {
-        // PostgreSQL'e veri ekleme (INSERT)
+        // PostgreSQL(INSERT)
         try
         {
             string query = "SELECT \"Password\" FROM users WHERE \"UserId\" = '" + userId + "'";

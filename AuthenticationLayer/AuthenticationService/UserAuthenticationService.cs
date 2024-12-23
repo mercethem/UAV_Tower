@@ -4,27 +4,27 @@ namespace AuthenticationServiceUser.AuthenticationService
 {
     public class UserAuthenticationService : BaseUserAuthenticationService
     {
-        public override BaseUser Login(string username, string password) // Method to authenticate user. // Kullanıcıyı doğrulamak için metod.
+        public override BaseUser Login(string username, string password) // Method to authenticate user.
         {
-            if (username == "admin" && password == "adminpass") // Check admin credentials. // Yönetici kimlik bilgilerini kontrol et.
+            if (username == "admin" && password == "adminpass")  
             {
-                var adminUser = new AdminUser("12345", "Admin", "User", "admin001", "adminpass"); // Create new AdminUser. // Yeni bir AdminUser oluştur.
-                if (adminUser.LogIn(username, password)) // Attempt to sign in the admin user. // Yönetici kullanıcının giriş yapmasını dene.
+                var adminUser = new AdminUser("12345", "Admin", "User", "admin001", "adminpass");
+                if (adminUser.LogIn(username, password)) 
                 {
-                    return adminUser; // Return the authenticated admin user. // Doğrulanan yönetici kullanıcısını döndür.
+                    return adminUser; 
                 }
             }
-            else if (username == "user" && password == "userpass") // Check regular user credentials. // Normal kullanıcı kimlik bilgilerini kontrol et.
+            else if (username == "user" && password == "userpass")
             {
-                var regularUser = new RegularUser("67890", "Regular", "User", "user001", "userpass"); // Create new RegularUser. // Yeni bir RegularUser oluştur.
-                if (regularUser.LogIn(username, password)) // Attempt to sign in the regular user. // Normal kullanıcının giriş yapmasını dene.
+                var regularUser = new RegularUser("67890", "Regular", "User", "user001", "userpass"); 
+                if (regularUser.LogIn(username, password))
                 {
-                    return regularUser; // Return the authenticated regular user. // Doğrulanan normal kullanıcısını döndür.
+                    return regularUser;
                 }
             }
 
-            Console.WriteLine("Login failed: Invalid credentials."); // Output login failure message. // Giriş başarısız mesajını ekrana yazdır.
-            return null; // Return null if login failed. // Giriş başarısız olduysa null döndür.
+            Console.WriteLine("Login failed: Invalid credentials."); 
+            return null;
         }
     }
 }

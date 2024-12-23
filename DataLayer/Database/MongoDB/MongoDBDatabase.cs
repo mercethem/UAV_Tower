@@ -9,7 +9,7 @@ public class MongoDatabaseService
     private IMongoDatabase database;
     private string ConnectionString { get; set; }
 
-    // MongoDB bağlantı kurulumu
+
     public MongoDatabaseService(string connectionString, string dbName = "testdb")
     {
         ConnectionString = connectionString;
@@ -17,13 +17,13 @@ public class MongoDatabaseService
         database = client.GetDatabase(dbName);
     }
 
-    // Veritabanına bağlantı testi
+
     public bool ConnectionTest()
     {
         try
         {
             var command = new BsonDocument("ping", 1);
-            database.RunCommand<BsonDocument>(command);  // MongoDB'ye Ping gönderiyoruz
+            database.RunCommand<BsonDocument>(command);
             Console.WriteLine("MongoDB connection success.");
             return true;
         }
@@ -34,13 +34,13 @@ public class MongoDatabaseService
         }
     }
 
-    // Veritabanından herhangi bir koleksiyondan veri almak
+
     public List<T> GetValue<T>(string collectionName, FilterDefinition<T> filter = null)
     {
         try
         {
             var collection = database.GetCollection<T>(collectionName);
-            filter = filter ?? Builders<T>.Filter.Empty;  // Eğer filtre yoksa tüm veriyi getir
+            filter = filter ?? Builders<T>.Filter.Empty;
 
             return collection.Find(filter).ToList();
         }
@@ -51,13 +51,13 @@ public class MongoDatabaseService
         }
     }
 
-    // Veritabanına yeni veri eklemek
+
     public void SetValue<T>(string collectionName, T data)
     {
         try
         {
             var collection = database.GetCollection<T>(collectionName);
-            collection.InsertOne(data);  // Veriyi koleksiyona ekliyoruz
+            collection.InsertOne(data);
             Console.WriteLine("Data inserted into MongoDB.");
         }
         catch (Exception ex)
@@ -66,13 +66,13 @@ public class MongoDatabaseService
         }
     }
 
-    // Veritabanındaki mevcut veriyi güncellemek
+
     public void UpdateValue<T>(string collectionName, FilterDefinition<T> filter, UpdateDefinition<T> update)
     {
         try
         {
             var collection = database.GetCollection<T>(collectionName);
-            var result = collection.UpdateOne(filter, update);  // Filtreye göre güncelleme yapıyoruz
+            var result = collection.UpdateOne(filter, update);
             if (result.MatchedCount > 0)
                 Console.WriteLine("Data updated in MongoDB.");
             else
@@ -84,13 +84,13 @@ public class MongoDatabaseService
         }
     }
 
-    // Veritabanından veri silmek
+
     public void DeleteValue<T>(string collectionName, FilterDefinition<T> filter)
     {
         try
         {
             var collection = database.GetCollection<T>(collectionName);
-            var result = collection.DeleteOne(filter);  // Filtreye göre veri silme
+            var result = collection.DeleteOne(filter);
             if (result.DeletedCount > 0)
                 Console.WriteLine("Data deleted from MongoDB.");
             else

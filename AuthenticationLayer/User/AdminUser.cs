@@ -3,14 +3,14 @@
     public class AdminUser : BaseUser
     {
         public AdminUser(string citizenID, string name, string surname, string userID, string password)
-            : base(citizenID, name, surname, userID, password) // Initialize the base user properties. // Temel kullanıcı özelliklerini başlat.
+            : base(citizenID, name, surname, userID, password) // Initialize the base user properties.
         {
         }
 
-        public override void LogOut() // Implement sign-out for admin users. // Yönetici kullanıcılar için çıkış işlemini uygula.
+        public override void LogOut() // Implement sign-out for admin users. 
         {
-            Console.WriteLine($"Admin {Name} signed out."); // Output sign-out message. // Çıkış mesajını ekrana yazdır.
-            // Similar handling as in RegularUser. // Normal kullanıcıda olduğu gibi benzer işlem.
+            Console.WriteLine($"Admin {Name} signed out.");
+            
         }
     }
 }

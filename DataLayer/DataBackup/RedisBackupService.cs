@@ -9,7 +9,7 @@ namespace DataBackup
         {
             if (!IsContainerRunning("my-redis"))
             {
-                Console.WriteLine("Redis container is not running. Backup will not be performed."); // Checking if the container is running // Konteynerin çalışıp çalışmadığını kontrol ediyoruz
+                Console.WriteLine("Redis container is not running. Backup will not be performed."); // Checking if the container is running
                 return;
             }
 
@@ -34,13 +34,13 @@ namespace DataBackup
             };
 
             Process process = Process.Start(pro);
-            process.WaitForExit(); // Wait for the command to complete // Komutun tamamlanmasını bekliyoruz
+            process.WaitForExit(); // Wait for the command to complete 
         }
 
         private bool IsContainerRunning(string containerName)
         {
             var result = RunCommandAndGetOutput("docker", $"ps -q -f name={containerName}");
-            return !string.IsNullOrEmpty(result); // Checking if the container is running // Konteynerin çalışıp çalışmadığını kontrol ediyoruz
+            return !string.IsNullOrEmpty(result); // Checking if the container is running
         }
 
         private string RunCommandAndGetOutput(string command, string arguments)

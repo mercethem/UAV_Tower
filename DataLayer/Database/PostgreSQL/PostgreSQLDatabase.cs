@@ -17,28 +17,28 @@ public class PostgreSQLDatabaseService : DatabaseService
         {
             using (var connection = new NpgsqlConnection(ConnectionString))
             {
-                connection.Open(); // Bağlantıyı açmaya çalış
+                connection.Open();
                 Console.WriteLine("PostgreSQL connection success.");
-                return true; // Bağlantı başarılıysa true döner
+                return true;
             }
         }
         catch (Exception ex)
         {
             Console.WriteLine($"PostgreSQL connection failed: {ex.Message}");
-            return false; // Bağlantı hatalıysa false döner
+            return false;
         }
     }
 
     public override void ConnectionDataBase()
     {
-        // Veritabanına bağlantıyı burada açabilirsiniz
+
         connection = new NpgsqlConnection(ConnectionString);
         connection.Open();
     }
-    
+
     public override string GetValue(string query)
     {
-        // PostgreSQL'den veri okuma
+
         try
         {
             using (var connection = new NpgsqlConnection(ConnectionString))
@@ -48,15 +48,15 @@ public class PostgreSQLDatabaseService : DatabaseService
                 {
                     using (var reader = command.ExecuteReader())
                     {
-                        // Verilerin her satırını yazdırıyoruz
+
                         while (reader.Read())
                         {
-                            // Satırdaki her sütunu yazdırıyoruz
+
                             for (int i = 0; i < reader.FieldCount; i++)
                             {
-                                Console.Write(reader[i] + "\t");  // Her sütun değerini yazdır
+                                Console.Write(reader[i] + "\t");
                             }
-                            Console.WriteLine(); // Satırın sonunda yeni bir satır
+                            Console.WriteLine();
                         }
                     }
                 }
@@ -68,9 +68,8 @@ public class PostgreSQLDatabaseService : DatabaseService
             return null;
         }
 
-        return "Veriler başarıyla yazdırıldı"; // Veri okuma başarılı
+        return "Veriler başarıyla yazdırıldı";
     }
-    
 
 
     public override void SetValue(string data)
@@ -80,13 +79,11 @@ public class PostgreSQLDatabaseService : DatabaseService
 
     public override void UpdateValue(string data)
     {
-        throw new NotImplementedException ();
+        throw new NotImplementedException();
     }
 
     public override void DeleteValue(string data)
     {
         throw new NotImplementedException();
     }
-
-    // İstediğiniz takdirde diğer overload'ları ekleyebilirsiniz.
 }

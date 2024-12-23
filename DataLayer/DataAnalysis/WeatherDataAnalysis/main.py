@@ -3,29 +3,29 @@ import psycopg2
 from datetime import datetime
 import time
 
-# OpenWeather API bilgileri
+
 API_KEY = "3583b31f210c210344db810cd563fd6b"
 CITY_NAME = "Elazığ"
 API_URL = f"http://api.openweathermap.org/data/2.5/weather?q={CITY_NAME}&appid={API_KEY}&units=metric"
 
-# PostgreSQL veritabanı bağlantı bilgileri
+
 DB_HOST = "localhost"
 DB_PORT = "5432"
 DB_NAME = "WeatherDataAnalysis"
 DB_USER = "postgres"
 DB_PASSWORD = "22"
 
-# OpenWeather API'den verileri çekme fonksiyonu
+
 def fetch_weather_data():
     try:
         response = requests.get(API_URL)
-        response.raise_for_status()  # Hata varsa yakala
+        response.raise_for_status()  
         return response.json()
     except requests.exceptions.RequestException as e:
         print(f"API isteği sırasında hata oluştu: {e}")
         return None
 
-# PostgreSQL'e bağlanma ve veriyi kaydetme fonksiyonu
+
 def save_weather_data_to_db(weather_data):
     try:
         conn = psycopg2.connect(
@@ -53,7 +53,7 @@ def save_weather_data_to_db(weather_data):
         city = weather_data['name']
         record_datetime = datetime.now()
 
-        # Tablonun oluşturulması
+      
         cursor.execute("""
         CREATE TABLE IF NOT EXISTS weather_data (
             id SERIAL PRIMARY KEY,
@@ -75,7 +75,7 @@ def save_weather_data_to_db(weather_data):
         )
         """)
 
-        # Verinin eklenmesi
+       
         cursor.execute("""
         INSERT INTO weather_data (
             description, temperature, feelsLike, humidity, windSpeed, pressure,
@@ -98,16 +98,16 @@ def save_weather_data_to_db(weather_data):
 if __name__ == "__main__":
     while True:
         try:
-            # OpenWeather API'den verileri çek
+          
             weather_data = fetch_weather_data()
             if weather_data:
                 save_weather_data_to_db(weather_data)
             else:
                 print("Veriler alınamadı, tekrar denenecek.")
 
-            # 10 dakika bekle
+          
             print("Bir sonraki veri çekme işlemi için 10 dakika bekleniyor...")
-            time.sleep(600)  # 600 saniye = 10 dakika
+            time.sleep(600)  
 
         except KeyboardInterrupt:
             print("\nProgram durduruldu.")

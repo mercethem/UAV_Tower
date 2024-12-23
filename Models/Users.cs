@@ -2,16 +2,16 @@
 
 namespace UAV_Tower.Models
 {
-    [Table("users")] // Tablo adını doğru eşle
+    [Table("users")]
     public class User
     {
         [Column("id")]
         public string Id { get; set; }
 
-        [Column("username")] // SQL'deki username sütununa eşle
+        [Column("username")] 
         public string Username { get; set; }
 
-        [Column("password")] // SQL'deki password sütununa eşle
+        [Column("password")]
         public string Password { get; set; }
     }
 }

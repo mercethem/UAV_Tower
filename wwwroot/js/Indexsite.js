@@ -1,5 +1,4 @@
-﻿
-function openURL(url, button) {
+﻿function openURL(url, button) {
     const newTab = window.open(url, '_blank');
     button.classList.add('active');
     const interval = setInterval(() => {
@@ -9,10 +8,10 @@ function openURL(url, button) {
         }
     }, 500);
 }
-const apiKey = "3583b31f210c210344db810cd563fd6b"; // OpenWeather API anahtarınızı buraya ekleyin
-const city = "Elazig"; // Şehir ismini buraya ekleyin
+const apiKey = "3583b31f210c210344db810cd563fd6b";
+const city = "Elazig";
 
-// Hava durumu verisini OpenWeather API'den çekme
+
 async function fetchWeather() {
     try {
         const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`);
@@ -26,12 +25,12 @@ async function fetchWeather() {
             const windSpeed = data.wind.speed;
             const humidity = data.main.humidity;
             const pressure = data.main.pressure;
-            const visibility = data.visibility / 1000; // Görüş mesafesi km cinsinden
+            const visibility = data.visibility / 1000;
             const clouds = data.clouds.all;
             const sunrise = new Date(data.sys.sunrise * 1000).toLocaleTimeString();
             const sunset = new Date(data.sys.sunset * 1000).toLocaleTimeString();
 
-            // Hava durumu bilgilerini dinamik olarak güncelleme
+
             const weatherHtml = `
                                 <p><strong>Temperature:</strong> ${temp}°C</p>
                                 <p><strong>Feels Like:</strong> ${feelsLike}°C</p>
@@ -54,13 +53,13 @@ async function fetchWeather() {
     }
 }
 
-// Sayfa yüklendiğinde hava durumu verisini al
+
 window.onload = fetchWeather;
 
-// Hava durumu verisini her 5 dakikada bir güncelle
-setInterval(fetchWeather, 300000); // 300000 ms = 5 dakika
 
-// Saat ve tarih bilgisini her saniyede bir güncelle
+setInterval(fetchWeather, 300000);
+
+
 function updateTimeAndDate() {
     const timeElement = document.getElementById('timeText');
     const dayElement = document.getElementById('dayText');
@@ -79,4 +78,4 @@ function updateTimeAndDate() {
     dayElement.innerHTML = day;
 }
 
-setInterval(updateTimeAndDate, 1000); // Saat ve tarihi her saniyede bir güncelle
+setInterval(updateTimeAndDate, 1000); 

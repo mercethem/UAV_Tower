@@ -3,7 +3,7 @@ from sqlalchemy import create_engine
 from dash import Dash, dcc, html, Input, Output
 import plotly.graph_objects as go
 
-# PostgreSQL veritabanı bağlantı bilgileri
+
 DB_HOST = "localhost"
 DB_PORT = "5432"
 DB_NAME = "WeatherDataAnalysis"
@@ -11,7 +11,7 @@ DB_USER = "postgres"
 DB_PASSWORD = "22"
 
 
-# SQLAlchemy ile veritabanı bağlantısı ve veri çekme fonksiyonu
+
 def fetch_weather_data_from_db():
     try:
         engine = create_engine(f"postgresql+psycopg2://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}")
@@ -31,7 +31,6 @@ def fetch_weather_data_from_db():
         return None
 
 
-# Dash uygulaması oluşturma
 app = Dash(__name__)
 df = fetch_weather_data_from_db()
 
@@ -39,10 +38,10 @@ if df is None or df.empty:
     print("Veritabanından veri çekilemedi veya veri bulunamadı.")
     exit()
 
-# `recorddatetime` sütununu sadece tarih kısmına indirgemek
+
 df['recorddate'] = df['recorddatetime'].dt.date
 
-# Tema renk ayarları
+
 light_theme = {
     'backgroundColor': '#d3e0ea',
     'textColor': '#2c3e50',
@@ -59,7 +58,7 @@ dark_theme = {
     'inputBackground': '#34495e',
 }
 
-# Uygulama düzeni (layout)
+
 app.layout = html.Div(
     style={
         'fontFamily': 'Arial, sans-serif',
@@ -70,7 +69,6 @@ app.layout = html.Div(
         'boxShadow': '0 4px 8px rgba(0, 0, 0, 0.1)'
     },
     children=[
-        # Tema seçici (Açık/Koyu Mod)
         html.Div(
             children=[
                 dcc.RadioItems(
@@ -86,13 +84,13 @@ app.layout = html.Div(
             style={'textAlign': 'right', 'marginBottom': '30px'}
         ),
 
-        # Tema ayarlarını saklayan store
+        
         dcc.Store(id='theme-store'),
 
         html.H1("Weather Data Analysis", style={'textAlign': 'center', 'fontSize': '2.5rem'}),
 
         html.Div([
-            # Tarih aralığı seçici
+           
             dcc.DatePickerRange(
                 id='date-picker-range',
                 min_date_allowed=df['recorddate'].min(),
@@ -102,7 +100,7 @@ app.layout = html.Div(
                 style={'marginBottom': '20px'}
             ),
 
-            # Ölçüm türü seçici
+          
             dcc.Dropdown(
                 id='metrics-dropdown',
                 options=[{'label': col.capitalize(), 'value': col} for col in df.columns if
@@ -113,7 +111,7 @@ app.layout = html.Div(
                 style={'marginBottom': '20px'}
             ),
 
-            # Şehir seçici
+          
             dcc.Dropdown(
                 id='city-dropdown',
                 options=[{'label': city, 'value': city} for city in df['city'].unique()],
@@ -124,7 +122,7 @@ app.layout = html.Div(
             ),
         ], style={'marginBottom': '40px'}),
 
-        # Sunrise ve Sunset saatlerini gösteren bölüm
+       
         html.Div(
             id='sun-times',
             style={
@@ -137,7 +135,7 @@ app.layout = html.Div(
             }
         ),
 
-        # Grafik alanı
+        
         dcc.Graph(
             id='weather-graph',
             config={'displayModeBar': False},
@@ -147,7 +145,7 @@ app.layout = html.Div(
 )
 
 
-# Callback fonksiyonu: Tarih aralığı, ölçüm türü ve şehir değiştiğinde grafiği güncelle
+
 @app.callback(
     [Output('weather-graph', 'figure'),
      Output('sun-times', 'children'),
@@ -159,18 +157,18 @@ app.layout = html.Div(
      Input('theme-switch', 'value')]
 )
 def update_graph_and_suntimes(start_date, end_date, selected_metrics, selected_cities, theme_value):
-    # Temayı seç
+   
     theme = light_theme if theme_value == 'light' else dark_theme
 
-    # Veriyi filtrele
+   
     filtered_df = df[(df['recorddate'] >= pd.to_datetime(start_date).date()) &
                      (df['recorddate'] <= pd.to_datetime(end_date).date()) &
                      (df['city'].isin(selected_cities))]
 
-    # Grafik oluşturma
+    
     fig = go.Figure()
 
-    # Dinamik olarak seçilen metrikler için grafik oluştur
+   
     colors = {
         'temperature': 'firebrick',
         'humidity': 'blue',
@@ -200,7 +198,7 @@ def update_graph_and_suntimes(start_date, end_date, selected_metrics, selected_c
         width=1000
     )
 
-    # Seçilen tarihlerdeki en erken ve en geç sunrise/sunset saatlerini al
+    
     if not filtered_df.empty:
         earliest_sunrise = filtered_df['sunrise'].min().time()
         latest_sunset = filtered_df['sunset'].max().time()

@@ -3,16 +3,16 @@
     public class Plane : BaseAircraft
     {
         public Plane(string callSign, string model, TypesOfAircraft type)
-            : base(callSign, model, type) { } // Constructor for Plane // Uçak için yapıcı metod
+            : base(callSign, model, type) { } // Constructor for Plane
 
-        public override void TakeOff()
+        public override void TakeOff()// Changes status to in the air
         {
-            IsInAir = true; // Changes status to in the air // Durumu havada olarak değiştirir
+            IsInAir = true;
         }
 
-        public override void Land()
+        public override void Land()// Changes status to on the ground
         {
-            IsInAir = false; // Changes status to on the ground // Durumu yerde olarak değiştirir
+            IsInAir = false;
         }
     }
 }

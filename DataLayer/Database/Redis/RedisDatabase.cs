@@ -38,7 +38,7 @@ public class RedisDataBaseService : DatabaseService
     {
         try
         {
-            var value = database.StringGet(query); // Anahtarı kullanarak değeri alıyoruz
+            var value = database.StringGet(query);
             if (value.HasValue)
             {
                 return value.ToString();
@@ -59,7 +59,7 @@ public class RedisDataBaseService : DatabaseService
         try
         {
             var key = "sampleKey";
-            database.StringSet(key, data); // Anahtar ve veriyi Redis'e ekliyoruz
+            database.StringSet(key, data);
             Console.WriteLine("Data inserted into Redis.");
         }
         catch (Exception ex)
@@ -72,7 +72,7 @@ public class RedisDataBaseService : DatabaseService
     {
         try
         {
-            database.StringSet(key, value);  // Anahtarı ve değeri Redis'e ekler
+            database.StringSet(key, value);
             Console.WriteLine($"Data inserted into Redis: Key = {key}, Value = {value}");
         }
         catch (Exception ex)
@@ -86,7 +86,7 @@ public class RedisDataBaseService : DatabaseService
         try
         {
             var key = "sampleKey";
-            database.StringSet(key, data); // Var olan anahtarın değerini güncelliyoruz
+            database.StringSet(key, data);
             Console.WriteLine("Data updated in Redis.");
         }
         catch (Exception ex)
@@ -98,7 +98,7 @@ public class RedisDataBaseService : DatabaseService
     {
         try
         {
-            database.StringSet(key, newValue);  // Var olan anahtarın değerini günceller
+            database.StringSet(key, newValue);
             Console.WriteLine($"Data updated in Redis: Key = {key}, New Value = {newValue}");
         }
         catch (Exception ex)
@@ -111,7 +111,7 @@ public class RedisDataBaseService : DatabaseService
     {
         try
         {
-            database.KeyDelete(key);  // Anahtarı sil
+            database.KeyDelete(key);
             Console.WriteLine($"Data deleted from Redis: Key = {key}");
         }
         catch (Exception ex)

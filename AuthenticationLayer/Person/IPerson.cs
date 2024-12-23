@@ -2,6 +2,6 @@
 {
     public interface IPerson
     {
-        // Interface for person entities. // Kişi varlıkları için arayüz.
+        // Interface for person entities.
     }
 }

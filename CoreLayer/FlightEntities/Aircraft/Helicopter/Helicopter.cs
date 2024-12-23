@@ -3,16 +3,16 @@
     public class Helicopter : BaseAircraft
     {
         public Helicopter(string callSign, string model, TypesOfAircraft type)
-            : base(callSign, model, type) { } // Constructor for Helicopter // Helikopter için yapıcı metod
+            : base(callSign, model, type) { } // Constructor for Helicopter 
 
-        public override void TakeOff()
+        public override void TakeOff()// Changes status to in the air
         {
-            IsInAir = true; // Changes status to in the air // Durumu havada olarak değiştirir
+            IsInAir = true;  
         }
 
-        public override void Land()
+        public override void Land()// Changes status to on the ground
         {
-            IsInAir = false; // Changes status to on the ground // Durumu yerde olarak değiştirir
+            IsInAir = false; 
         }
     }
 }
