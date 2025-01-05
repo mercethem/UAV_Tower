@@ -37,7 +37,7 @@ The project documentation can be accessed through the following link:
 
 - **Docker:** The databases run in Docker containers.
 - **Veritabanları:** PostgreSQL, MongoDB, Redis (can be installed via Docker).
-- **Dump1090 Calibration: Dump1090 calibration needs to be performed to receive flight data.
+- **Dump1090 Calibration:** Dump1090 calibration needs to be performed to receive flight data.
 
 ## Installation
 
