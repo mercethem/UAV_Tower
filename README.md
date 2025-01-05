@@ -5,6 +5,10 @@
 - Berkan BAĞIT
 - Hivda KORKMAZ
 
+-----------------------------------
+### Copyright (c) 2025 Ethem Merç, Berkan Bağıt, Hivda Korkmaz. All Rights Reserved.
+-----------------------------------
+
 ## Features
 
 The project is structured around four key components:
@@ -99,14 +103,13 @@ You can view satellite images in radar and thermal modes in two different ways f
 
 > Database Backup: The system automatically performs a database backup each time it is started and at 00:00 on the 1st of every month.
 
------------------------------------
-### Copyright (c) 2025 Ethem Merç, Berkan Bağıt, Hivda Korkmaz. All Rights Reserved.
------------------------------------
+-----------------------------------------------------
 
 ### Acknowledgements
 ### We would like to thank especially Salvatore Sanfilippo and the sat24 team, as well as all those who have supported the successful execution of this project. Their strong features and help have made significant contributions to our project.
 
 ------------------------------------------------------
+
 ### Radar Screen
 ![ Alt text](Documents/Screenshot_Login.png)  [](Documents/Screenshot_Login.png)
 
