@@ -129,6 +129,15 @@ We would like to thank especially Salvatore Sanfilippo and the sat24 team, as we
 
 ------------------------------------------------------
 
+
+### Autonome Taxi
+[![Watch the video](https://github.com/user-attachments/assets/c9af8737-2452-48da-8152-68f771a1665d)](https://github.com/user-attachments/assets/c9af8737-2452-48da-8152-68f771a1665d)
+
+
+[![Watch the video](https://github.com/user-attachments/assets/4927b85d-c33b-49da-9a52-4794242a12a0)](https://github.com/user-attachments/assets/4927b85d-c33b-49da-9a52-4794242a12a0)
+
+------------------------------------------------------
+
 > 📚 DataBase Scripts
 
 ```bash
