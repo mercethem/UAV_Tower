@@ -70,6 +70,11 @@ docker pull ethemmerc/uav_tower:my-redis
 ```bash
 docker pull ethemmerc/uav_tower:my-postgres
 ```
+
+
+> ⚠️ Database Scripts are at the end of the readme.md ⚠️
+
+
 ### 3. Dump1090 Calibration 📡
 
 To receive the data stream, Dump1090 needs to be properly calibrated. Run the following calibration command:
@@ -100,6 +105,205 @@ This project is licensed under the MIT License. For more details, please refer t
 
 Acknowledgements
 
-> :warning: We would like to thank especially Salvatore Sanfilippo and the sat24 team, as well as all those who have supported the successful execution of this project. Their strong features and help have made significant contributions to our project.
+We would like to thank especially Salvatore Sanfilippo and the sat24 team, as well as all those who have supported the successful execution of this project. Their strong features and help have made significant contributions to our project.
+
+------------------------------------------------------
+> :warning: DataBase Scripts
+
+```bash
+/*
+ Source Server         : my-postgres
+ Source Server Type    : PostgreSQL
+ Source Server Version : 170000 (170000)
+ Source Host           : localhost:5432
+ Source Catalog        : Login
+ Source Schema         : public
+
+ Target Server Type    : PostgreSQL
+ Target Server Version : 170000 (170000)
+ File Encoding         : 65001
+*/
+
+-- ----------------------------
+-- Table structure for users
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."users";
+CREATE TABLE "public"."users" (
+  "id" varchar(64) COLLATE "pg_catalog"."default" NOT NULL,
+  "username" varchar(50) COLLATE "pg_catalog"."default",
+  "password" varchar(100) COLLATE "pg_catalog"."default"
+)
+;
+
+-- ----------------------------
+-- Records of users
+-- ----------------------------
+INSERT INTO "public"."users" VALUES ('d351e777afde7aaf2a1277d0d0ae0a1fc8614daea6c8080635bfb48fe852396a', 'Berkan', '220541044');
+INSERT INTO "public"."users" VALUES ('3f3cca59aa4a5ac3f50eb49d0651423112083aa90e45ae6ec52105b8df58f6c0', 'Hivda', '220541081');
+INSERT INTO "public"."users" VALUES ('62653aca52ae29e11ce26dc31a2e603670be024e0160ccbad05ef3c7625ccd08', 'Ethem', '220541022');
+INSERT INTO "public"."users" VALUES ('bc50cf0eefb7028690eee659c1a553fb2d4b158488db10c53c9e395c210f9151', 'ADMIN', 'ADMIN');
+
+-- ----------------------------
+-- Primary Key structure for table users
+-- ----------------------------
+ALTER TABLE "public"."users" ADD CONSTRAINT "Login_pkey" PRIMARY KEY ("id");
+```
+
+
+```bash
+/*
+ Source Server         : my-postgres
+ Source Server Type    : PostgreSQL
+ Source Server Version : 170000 (170000)
+ Source Host           : localhost:5432
+ Source Catalog        : postgres
+ Source Schema         : public
+
+ Target Server Type    : PostgreSQL
+ Target Server Version : 170000 (170000)
+ File Encoding         : 65001
+*/
+
+-- ----------------------------
+-- Sequence structure for flight_data_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."flight_data_id_seq";
+CREATE SEQUENCE "public"."flight_data_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Table structure for flights
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."flights";
+CREATE TABLE "public"."flights" (
+  "id" int4 NOT NULL DEFAULT nextval('flight_data_id_seq'::regclass),
+  "data" jsonb NOT NULL,
+  "created_at" timestamptz(6) DEFAULT CURRENT_TIMESTAMP
+)
+;
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."flight_data_id_seq"
+OWNED BY "public"."flights"."id";
+SELECT setval('"public"."flight_data_id_seq"', 10662, true);
+
+-- ----------------------------
+-- Primary Key structure for table flights
+-- ----------------------------
+ALTER TABLE "public"."flights" ADD CONSTRAINT "flight_data_pkey" PRIMARY KEY ("id");
+```
+
+
+```bash
+/*
+ Source Server         : my-postgres
+ Source Server Type    : PostgreSQL
+ Source Server Version : 170000 (170000)
+ Source Host           : localhost:5432
+ Source Catalog        : WeatherDataAnalysis
+ Source Schema         : public
+
+ Target Server Type    : PostgreSQL
+ Target Server Version : 170000 (170000)
+ File Encoding         : 65001
+*/
+
+
+-- ----------------------------
+-- Sequence structure for weather_data_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."weather_data_id_seq";
+CREATE SEQUENCE "public"."weather_data_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 2147483647
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Table structure for weather_data
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."weather_data";
+CREATE TABLE "public"."weather_data" (
+  "id" int4 NOT NULL DEFAULT nextval('weather_data_id_seq'::regclass),
+  "description" varchar(255) COLLATE "pg_catalog"."default",
+  "temperature" float8,
+  "feelslike" float8,
+  "humidity" int4,
+  "windspeed" float8,
+  "pressure" int4,
+  "clouds" int4,
+  "visibility" int4,
+  "weatherid" int4,
+  "sunrise" timestamp(6),
+  "sunset" timestamp(6),
+  "lat" float8,
+  "lon" float8,
+  "city" varchar(255) COLLATE "pg_catalog"."default",
+  "recorddatetime" timestamp(6)
+)
+;
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."weather_data_id_seq"
+OWNED BY "public"."weather_data"."id";
+SELECT setval('"public"."weather_data_id_seq"', 228, true);
+
+-- ----------------------------
+-- Primary Key structure for table weather_data
+-- ----------------------------
+ALTER TABLE "public"."weather_data" ADD CONSTRAINT "weather_data_pkey" PRIMARY KEY ("id");
+```
+
+
+```bash
+/*
+ Source Server         : my-mongodb
+ Source Server Type    : MongoDB
+ Source Server Version : 80003 (8.0.3)
+ Source Host           : localhost:27017
+ Source Schema         : FlightDataDB
+
+ Target Server Type    : MongoDB
+ Target Server Version : 80003 (8.0.3)
+ File Encoding         : 65001
+*/
+
+
+// ----------------------------
+// Collection structure for Flights
+// ----------------------------
+db.getCollection("Flights").drop();
+db.createCollection("Flights");
+```
+
+
+```bash
+// Source Server         : my-redis
+// Source Server Type    : Redis
+// Source Server Version : 70401 (7.4.1)
+// Source Host           : localhost:6379
+// Source Schema         : 0
+
+// Target Server Type    : Redis
+// Target Server Version : 70401 (7.4.1)
+// File Encoding         : 65001
+
+
+// ----------------------------
+// Records of Database 0 (All Data)
+// ----------------------------
+SET Flights:06a0b1 "{\r\n  \"Flight\": \"QTR8C\",\r\n  \"Hex_ICAO\": \"06a0b1\",\r\n  \"Squawk\": \"3266\",\r\n  \"Latitude\": 0,\r\n  \"Longitude\": 0,\r\n  \"Altitude\": 40000,\r\n  \"Speed\": 486,\r\n  \"VertRate\": 0,\r\n  \"Track\": 288,\r\n  \"ValidPosition\": 0,\r\n  \"ValidTrack\": 1,\r\n  \"Messages\": 37,\r\n  \"Seen\": 1,\r\n  \"LastUpdated\": \"2024-12-23T08:13:02Z\"\r\n}"
+SET Flights:4baa8b "{\r\n  \"Flight\": \"THY70D\",\r\n  \"Hex_ICAO\": \"4baa8b\",\r\n  \"Squawk\": \"0716\",\r\n  \"Latitude\": 0,\r\n  \"Longitude\": 0,\r\n  \"Altitude\": 34025,\r\n  \"Speed\": 552,\r\n  \"VertRate\": -768,\r\n  \"Track\": 93,\r\n  \"ValidPosition\": 0,\r\n  
+```
+
 
 
