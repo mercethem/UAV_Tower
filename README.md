@@ -155,9 +155,6 @@ CREATE TABLE "public"."users" (
 -- ----------------------------
 -- Records of users
 -- ----------------------------
-INSERT INTO "public"."users" VALUES ('d351e777afde7aaf2a1277d0d0ae0a1fc8614daea6c8080635bfb48fe852396a', 'Berkan', '220541044');
-INSERT INTO "public"."users" VALUES ('3f3cca59aa4a5ac3f50eb49d0651423112083aa90e45ae6ec52105b8df58f6c0', 'Hivda', '220541081');
-INSERT INTO "public"."users" VALUES ('62653aca52ae29e11ce26dc31a2e603670be024e0160ccbad05ef3c7625ccd08', 'Ethem', '220541022');
 INSERT INTO "public"."users" VALUES ('bc50cf0eefb7028690eee659c1a553fb2d4b158488db10c53c9e395c210f9151', 'ADMIN', 'ADMIN');
 
 -- ----------------------------
