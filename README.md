@@ -23,6 +23,9 @@ The project documentation can be accessed through the following link:
 
 - **Real-Time Data Visualization:**
   - Detects the positions of aircraft using ADS-B (Automatic Dependent Surveillance-Broadcast) data and presents this data as a real-time radar image on a map.The highest detected flight altitude in the current system is 41,000 feet, and the approximate straight-line distance is 122 km.
+    
+> ⚠️ Attention : If you do not make the necessary frequency settings for unmanned aerial vehicles, you will receive civil aviation data.
+  
   - Can visualize in radar and thermal modes using satellite imagery.
   - Images are refreshed every two hours.
   
