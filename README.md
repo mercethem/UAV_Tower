@@ -100,14 +100,11 @@ You can view satellite images in radar and thermal modes in two different ways f
 > Database Backup: The system automatically performs a database backup each time it is started and at 00:00 on the 1st of every month.
 
 -----------------------------------
+### Copyright (c) 2025 Ethem Merç, Berkan Bağıt, Hivda Korkmaz. All Rights Reserved.
+-----------------------------------
 
-License
-
-This project is licensed under the MIT License. For more details, please refer to the LICENSE file.
-
-Acknowledgements
-
-We would like to thank especially Salvatore Sanfilippo and the sat24 team, as well as all those who have supported the successful execution of this project. Their strong features and help have made significant contributions to our project.
+### Acknowledgements
+### We would like to thank especially Salvatore Sanfilippo and the sat24 team, as well as all those who have supported the successful execution of this project. Their strong features and help have made significant contributions to our project.
 
 ------------------------------------------------------
 ### Radar Screen
