@@ -19,7 +19,7 @@ The project documentation can be accessed through the following link:
 
 
 - **Real-Time Data Visualization:**
-  - Detects the positions of aircraft using ADS-B (Automatic Dependent Surveillance-Broadcast) data and presents this data as a real-time radar image on a map. The highest detected flight altitude in the current system is 41,000 feet.
+  - Detects the positions of aircraft using ADS-B (Automatic Dependent Surveillance-Broadcast) data and presents this data as a real-time radar image on a map.The highest detected flight altitude in the current system is 41,000 feet, and the approximate straight-line distance is 122 km.
   - Can visualize in radar and thermal modes using satellite imagery.
   - Images are refreshed every two hours.
   
@@ -87,12 +87,14 @@ Usage
 After setting up the project, you can receive and visualize flight data. Flight data can be provided through port 30003.
 
 
-### 4. Sending Flight Data 🛫
+### 4. Receiving Flight Data 🛫 
+> ⚠️ Via radio frequencies without internet
 
 Provide the flight data in the correct format.
 Transmit the data through port 30003.
 Once the data is received, it will be displayed instantly on the visualization screen.
 
+-----------------------------------
 You can view satellite images in radar and thermal modes in two different ways from the main screen. The images will refresh every two hours.
 
 > Database Backup: The system automatically performs a database backup each time it is started and at 00:00 on the 1st of every month.
@@ -108,7 +110,22 @@ Acknowledgements
 We would like to thank especially Salvatore Sanfilippo and the sat24 team, as well as all those who have supported the successful execution of this project. Their strong features and help have made significant contributions to our project.
 
 ------------------------------------------------------
-> :warning: DataBase Scripts
+### Radar Screen
+![ Alt text](Documents/Radar_Screenshot.png)  [](Documents/Radar_Screenshot.png)
+
+------------------------------------------------------
+
+### Main Screen
+[![Watch the video](https://github.com/user-attachments/assets/78c5dfce-aa89-42b4-9c0d-96336c49afc2)](https://github.com/user-attachments/assets/78c5dfce-aa89-42b4-9c0d-96336c49afc2)
+
+------------------------------------------------------
+
+### Weather Analysis Screen
+![ Alt text](Documents/Weather_Analysis_Screenshot.png)  [](Documents/Weather_Analysis_Screenshot.png)
+
+------------------------------------------------------
+
+> 📚 DataBase Scripts
 
 ```bash
 /*
