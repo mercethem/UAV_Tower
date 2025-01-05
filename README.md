@@ -1,13 +1,12 @@
 # UAV Tower (Unmanned Aerial Vehicle Tower)
-
+#### Copyright (c) 2025 Ethem Merç, Berkan Bağıt, Hivda Korkmaz. All Rights Reserved.
+---------------------------------------------
 **Developed by:**
 - Ethem MERÇ (Scrum Master)
 - Berkan BAĞIT
 - Hivda KORKMAZ
 
------------------------------------
-### Copyright (c) 2025 Ethem Merç, Berkan Bağıt, Hivda Korkmaz. All Rights Reserved.
------------------------------------
+
 
 ## Features
 
