@@ -112,7 +112,7 @@ You can view satellite images in radar and thermal modes in two different ways f
 
 ------------------------------------------------------
 
-### Radar Screen
+### Login Screen
 ![ Alt text](Documents/ScreenShots/Screenshot_Login.png)  [](Documents/ScreenShots/Screenshot_Login.png)
 
 ------------------------------------------------------
